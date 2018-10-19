@@ -57,7 +57,9 @@ public class Salle extends Donjon {
 		int heroVIT = h.getVIT();
 		
 		dragonPV = dragonPV - heroATK;
-		System.out.println(dragonPV);
+		if(dragonPV <= 0) {
+			System.out.println("Bravo !");
+		}
 	}
 	
 }

@@ -67,7 +67,21 @@ public class Main {
 		uneSalle.choixSalle(uneSalle, leDragon);
 		uneSalle.combat(leDragon, leHero);
 		while(leDonjon.sortir() == false) {
+			nbDragon = (int)Math.floor(Math.random() * 10);	
+			leDragon = null;
+			while(nbDragon > 2) {
+				
+				nbDragon = (int)Math.floor(Math.random() * 10);					
+			}
 			
+			if(nbDragon <= 2) {
+							
+				leDragon= tabDragon[nbDragon];		
+			}
+			uneSalle.choixSalle(uneSalle, leDragon);
+			uneSalle.combat(leDragon, leHero);
+			Couloir couloir = new Couloir('C');
+			System.out.println(couloir.toString());
 			
 		}
 		if (leDonjon.sortir() == true){

@@ -27,7 +27,7 @@ public class Donjon {
 		
 		boolean test = false;
 		
-		System.out.println("Voulez-vous sortir dans le donjon ?");
+		System.out.println("Voulez-vous sortir du donjon ?");
 		Scanner scan = new Scanner(System.in);
 		String reponse = scan.nextLine();
 		if(!reponse.equals("Oui") && !reponse.equals("Non")) {	
